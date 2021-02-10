@@ -15,12 +15,13 @@ import {
   Text,
   TouchableOpacity,
 } from "react-native";
+import "react-native/tvos-types.d";
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
 class App extends React.Component {
-  buttonRef1;
-  buttonRef2;
+  buttonRef1: TouchableOpacity;
+  buttonRef2: TouchableOpacity;
 
   render() {
     return (
